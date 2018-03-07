@@ -106,16 +106,16 @@
 (require 'init-rust)
 (require 'init-toml)
 (require 'init-yaml)
-(require 'init-docker)
-(require 'init-terraform)
+;; (require 'init-docker)
+;; (require 'init-terraform)
 ;;(require 'init-nix)
 (maybe-require-package 'nginx-mode)
 
 (require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-(require 'init-clojure)
-(require 'init-clojure-cider)
+;; (require 'init-clojure)
+;; (require 'init-clojure-cider)
 (require 'init-common-lisp)
 
 (when *spell-check-support-enabled*
@@ -170,7 +170,8 @@
 ;;----------------------------------------------------------------------------
 (require 'init-local nil t)
 
-
+;; Use shift-arrows to move between visible buffers
+(windmove-default-keybindings)
 
 (provide 'init)
 
